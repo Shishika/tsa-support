@@ -48,7 +48,7 @@
               border: 1px solid #faab35;
               border-top: 6px solid #faab35;
               box-shadow: 0 2px 5px rgba(49, 49, 49, 0.25);
-              min-height: 350px;
+              min-height: 385px;
               padding: 0 11px;
               position: relative;
               text-align: center;
@@ -114,14 +114,14 @@
       border: 1px solid #faab35;
       border-top: 6px solid #faab35;
       box-shadow: 0 2px 5px rgba(49, 49, 49, 0.25);
-      min-height: 350px;
+      min-height: 385px;
       justify-content: center;
       padding: 0 11px;
       position: relative;
       text-align: center;
       display: flex;
       padding-bottom: 30px;
-      // width: 75%;
+      margin-bottom: 30px;
       flex-direction: column;
       transition: all 0.2s ease 0s;
       img {
