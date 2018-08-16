@@ -19,7 +19,6 @@
     line-height: 30px;
     text-align: left;
     color: #faab35;
-
     margin: 10px;
     .text {
       color: #fff;
@@ -67,6 +66,12 @@
   .header {
     height: 330px;
     .title {
+      display: flex;
+      flex-direction: column;
+      .logo {
+        align-self: center;
+        display: flex;
+      }
       h5 {
         font-size: 21px;
         line-height: normal;
