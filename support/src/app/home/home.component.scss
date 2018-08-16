@@ -10,10 +10,11 @@
     font-size: 17px;
     font-style: italic;
     letter-spacing: 1px;
+    font-weight: 300;
   }
   .login-choices {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin-bottom: 50px;
     .select-option {
@@ -53,7 +54,6 @@
               text-align: center;
               display: flex;
               flex-direction: column;
-              width: 100%;
               transition: all 0.2s ease 0s;
               img {
                 margin: 12px auto;
@@ -100,7 +100,7 @@
                   background-color: rgba(0, 129, 199, 0.8);
                 }
                 img {
-                  transform: scale(1.1);
+                  transform: scale(1.07);
                 }
                 h3,
                 h5 {
@@ -115,12 +115,14 @@
       border-top: 6px solid #faab35;
       box-shadow: 0 2px 5px rgba(49, 49, 49, 0.25);
       min-height: 350px;
+      justify-content: center;
       padding: 0 11px;
       position: relative;
       text-align: center;
       display: flex;
+      padding-bottom: 30px;
+      // width: 75%;
       flex-direction: column;
-      width: 25%;
       transition: all 0.2s ease 0s;
       img {
         margin: 12px auto;
@@ -167,7 +169,7 @@
           background-color: rgba(0, 129, 199, 0.8);
         }
         img {
-          transform: scale(1.1);
+          transform: scale(1.07);
         }
         h3,
         h5 {
@@ -180,68 +182,105 @@
 
 // iPhone plus portrait mode. width is 414px
 @media only screen and (min-width: 25em) and (orientation: portrait) {
-  .login-choices {
-    display: flex;
-    flex-wrap: wrap;
+  .public-section {
+    margin-top: 0px;
+    .select-header {
+      color: black;
+    }
+    .login-choices {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 }
 
 // mobile landscape where width is at least than 640px
 @media only screen and (min-width: 40em) and (orientation: landscape) {
-  .login-choices {
-    display: flex;
-    flex-wrap: wrap;
+  .public-section {
+    margin-top: 0px;
+    .select-header {
+      color: black;
+    }
+    .login-choices {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
   }
 }
 
 // iPhone Plus landscape where width is between than 640px and 736px
 @media only screen and (min-width: 42em) and (max-width: 46em) and (orientation: landscape) {
-  .login-choices {
-    display: flex;
-    flex-wrap: wrap;
+  .public-section {
+    .login-choices {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
   }
 }
 
 // tablet(iPad) portrait where width is at least than 768px
 @media only screen and (min-width: 48em) and (orientation: portrait) {
-  .login-choices {
-    display: flex;
-    flex-wrap: wrap;
+  .public-section {
+    margin-top: -240px;
+     .select-header {
+      color: #fff;
+    }
+    .login-choices {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
   }
 }
 
 // tablet(iPad) landscape where width is at least than 768px
 @media only screen and (min-width: 48em) and (orientation: landscape) {
-  .login-choices {
-    display: flex;
-    flex-wrap: wrap;
+  .public-section {
+    margin-top: -240px;
+    .select-header {
+      color: #fff;
+    }
+    .login-choices {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
   }
 }
 
 // iPhone X landscape where width is between 768px than 812px
 @media only screen and (min-width: 49em) and (max-width: 50.75em) and (orientation: landscape) {
-  .login-choices {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .select-option {
-    display: flex;
-    flex-direction: row;
+  .public-section {
+    .login-choices {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    .select-option {
+      display: flex;
+      flex-direction: row;
+    }
   }
 }
 
 // large desktop landscape where width is at least than 1200px
 @media only screen and (min-width: 75em) and (orientation: landscape) {
   // these styles are inherited from the tablet landscape media query, only changes affecting very large desktops go here
-  .events {
-    display: flex;
-    flex-wrap: wrap;
-    .event-box {
-      height: 230px;
+  .public-section {
+    margin-top: -240px;
+    .select-header {
+      color: #fff;
     }
-  }
-  .select-option {
-    display: flex;
-    flex-direction: row;
+    .login-choices {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    .select-option {
+      display: flex;
+      flex-direction: row;
+    }
   }
 }

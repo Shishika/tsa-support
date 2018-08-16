@@ -1,43 +1,104 @@
-.footer{
-    font-family: Arial, Helvetica, sans-serif;
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  height: 63px;
+  font-size: 14px;
+  background-color: black;
+  .footer-content {
+    color: white;
     display: flex;
-    flex-direction: row;
-    background-color: black;
-    .footer-content{
-        color: white;
-    }
+    justify-content: center;
+    align-self: center;
+  }
+  .privacy-policy {
+    display: flex;
+    align-self: center;
+  }
+  .copyright {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
 }
+
 // iPhone plus portrait mode. width is 414px
 @media only screen and (min-width: 25em) and (orientation: portrait) {
-    
+  .footer {
+    font-size: 12px;
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      .privacy-policy {
+        display: flex;
+        align-self: center;
+      }
+      .copyright {
+        display: flex;
+        text-align: center;
+      }
+    }
+  }
 }
 
 // mobile landscape where width is at least than 640px
 @media only screen and (min-width: 40em) and (orientation: landscape) {
-    
 }
 
 // iPhone Plus landscape where width is between than 640px and 736px
 @media only screen and (min-width: 42em) and (max-width: 46em) and (orientation: landscape) {
-    
+  .footer {
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
 }
 
 // tablet(iPad) portrait where width is at least than 768px
 @media only screen and (min-width: 48em) and (orientation: portrait) {
-    
+  .footer {
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
 }
 
 // tablet(iPad) landscape where width is at least than 768px
 @media only screen and (min-width: 48em) and (orientation: landscape) {
-    
+  .footer {
+    .footer-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .copyright {
+        justify-content: flex-end;
+      }
+    }
+  }
 }
 
 // iPhone X landscape where width is between 768px than 812px
 @media only screen and (min-width: 49em) and (max-width: 50.75em) and (orientation: landscape) {
-    
+  .footer {
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
 }
 
 // large desktop landscape where width is at least than 1200px
 @media only screen and (min-width: 75em) and (orientation: landscape) {
-    // these styles are inherited from the tablet landscape media query, only changes affecting very large desktops go here
+  // these styles are inherited from the tablet landscape media query, only changes affecting very large desktops go here
+  .footer {
+    .footer-content {
+      .copyright {
+        justify-content: flex-end;
+      }
+    }
+  }
 }

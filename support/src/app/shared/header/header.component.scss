@@ -2,8 +2,8 @@
   position: relative;
   height: 475px;
   background: #0099cc none repeat scroll 0 0;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
   .title {
     display: flex;
@@ -22,80 +22,145 @@
       color: #fff;
     }
   }
-  .heading {
-    color: #fff;
-    line-height: 30px;
-    text-align: center;
-    font-size: 27px;
-    padding: 0px 150px;
-    margin-bottom: 12px;
-  }
-  .search {
-    width: 67%;
-    padding-left: 10px;
-    align-self: center;
+  .heading-section {
     display: flex;
-    height: 55px;
-    border: 0;
-    border-radius: 6px;
-    font-size: 21px;
-    font-style: italic;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    align-self: center;
+    flex-direction: column;
+    .heading {
+      color: #fff;
+      line-height: 30px;
+      text-align: center;
+      font-size: 27px;
+    }
+    .search {
+      width: 67%;
+      padding-left: 10px;
+      align-self: center;
+      display: flex;
+      height: 55px;
+      border: 0;
+      border-radius: 6px;
+      font-size: 21px;
+      font-style: italic;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
   }
 }
 
 // iPhone plus portrait mode. width is 414px
 @media only screen and (min-width: 25em) and (orientation: portrait) {
   .header {
-    .heading {
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 23px;
-      padding: 0px;
+    .title {
+      h5 {
+        font-size: 21px;
+        line-height: normal;
+        margin: 7px 0px 13px 0px;
+      }
+      .header-title {
+        font-size: 21px;
+        line-height: normal;
+        margin: 7px 0px 13px 0px;
+        color: #faab35;
+        .text {
+          color: #fff;
+        }
+      }
+    }
+    .heading-section {
+      .heading {
+        font-size: 18px;
+        line-height: 23px;
+        margin: 0px 0px 12px 0px;
+      }
     }
   }
 }
 
 // mobile landscape where width is at least than 640px
 @media only screen and (min-width: 40em) and (orientation: landscape) {
-  .header {
-    .heading {
-      font-size: 23px;
-      line-height: 28px;
-      padding: 0px;
-    }
-  }
+  
 }
 
 // iPhone Plus landscape where width is between than 640px and 736px
 @media only screen and (min-width: 42em) and (max-width: 46em) and (orientation: landscape) {
   .header {
-    .heading {
-      font-size: 23px;
-      line-height: 28px;
-      padding: 0px;
+    .title {
+      h5 {
+        font-size: 27px;
+        line-height: normal;
+        margin: 7px 0px 13px 0px;
+      }
+      .header-title {
+        color: #faab35;
+        font-size: 27px;
+        .text {
+          color: #fff;
+        }
+      }
+    }
+    .heading-section {
+      .heading {
+        margin-top: 30px;
+        font-size: 23px;
+        line-height: 28px;
+        font-weight: 600;
+      }
     }
   }
 }
 
 // tablet(iPad) portrait where width is at least than 768px
 @media only screen and (min-width: 48em) and (orientation: portrait) {
+  .header {
+    .heading {
+      color: #fff;
+      line-height: 30px;
+      text-align: center;
+      font-size: 27px;
+      font-weight: 600;
+      margin: 40px 0px 12px 0px;
+    }
+  }
 }
 
 // tablet(iPad) landscape where width is at least than 768px
 @media only screen and (min-width: 48em) and (orientation: landscape) {
+  .header {
+    .heading {
+      color: #fff;
+      line-height: 30px;
+      text-align: center;
+      font-size: 27px;
+      font-weight: 600;
+      margin: 40px 0px 12px 0px;
+    }
+  }
 }
 
 // iPhone X landscape where width is between 768px than 812px
 @media only screen and (min-width: 49em) and (max-width: 50.75em) and (orientation: landscape) {
   .header {
-    .heading {
-      font-size: 27px;
-      line-height: 28px;
-      padding: 0px 17px;
+    .title {
+      h5 {
+        font-size: 27px;
+        line-height: normal;
+        margin: 7px 0px 13px 0px;
+      }
+      .header-title {
+        color: #faab35;
+        font-size: 27px;
+        .text {
+          color: #fff;
+        }
+      }
     }
-    .search {
-      width: 86%;
+    .heading-section {
+      .heading {
+        margin-top: 30px;
+        font-size: 27px;
+        line-height: 28px;
+        font-weight: 600;
+      }
     }
   }
 }
@@ -103,12 +168,14 @@
 // large desktop landscape where width is at least than 1200px
 @media only screen and (min-width: 75em) and (orientation: landscape) {
   // these styles are inherited from the tablet landscape media query, only changes affecting very large desktops go here
-  .heading {
-    color: #fff;
-    line-height: 30px;
-    text-align: center;
-    font-size: 27px;
-    padding: 0px 150px;
-    margin-bottom: 12px;
+  .header {
+    .heading {
+      color: #fff;
+      line-height: 30px;
+      text-align: center;
+      font-size: 27px;
+      font-weight: 600;
+      margin: 40px 0px 12px 0px;
+    }
   }
 }
