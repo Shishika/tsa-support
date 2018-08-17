@@ -9,7 +9,7 @@
     color: white;
     display: flex;
     line-height: 45px;
-    justify-content: center;
+    justify-content: space-around;
     align-self: center;
   }
   .privacy-policy {
@@ -62,11 +62,10 @@
 
 // iPhone Plus landscape where width is between than 640px and 736px
 @media only screen and (min-width: 42em) and (max-width: 46em) and (orientation: landscape) {
-  .footer {    
+  .footer {
     .footer-content {
       display: flex;
       flex-direction: column;
-      justify-content: center;
     }
   }
 }
@@ -78,7 +77,7 @@
     .footer-content {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
     }
   }
 }
@@ -91,7 +90,6 @@
     .footer-content {
       display: flex;
       flex-direction: row;
-      justify-content: center;
       .copyright {
         justify-content: flex-end;
       }
@@ -105,7 +103,6 @@
     .footer-content {
       display: flex;
       flex-direction: column;
-      justify-content: center;
     }
   }
 }
@@ -114,7 +111,6 @@
 @media only screen and (min-width: 75em) and (orientation: landscape) {
   // these styles are inherited from the tablet landscape media query, only changes affecting very large desktops go here
   .footer {
-    
     padding-top: 0px;
     .footer-content {
       .privacy-policy {
