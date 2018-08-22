@@ -1,0 +1,80 @@
+.title {
+  font-size: 30px;
+  color: #fd6d08;
+  font-weight: bold;
+}
+.form {
+  font-family: Arial, Helvetica, sans-serif;
+  .form-fields {
+    margin: 0px 20px;
+    .field {
+      .field-name{
+        display: flex;
+        align-items: center;
+      }
+      .field-input {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        // width: 100%;
+        padding: 4px;
+        margin-bottom: 9px;
+        line-height: 21px;
+        color: #555;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.18);
+      }
+      .required::after {
+        content: "*";
+        color: #d00;
+      }
+    }
+  }
+}
+
+// iPhone plus portrait mode. width is 414px
+@media only screen and (min-width: 25em) and (orientation: portrait) {
+  .form {
+    flex-direction: column;
+    display: flex;
+  }
+}
+
+// mobile landscape where width is at least than 640px
+@media only screen and (min-width: 40em) and (orientation: landscape) {
+}
+
+// iPhone Plus landscape where width is between than 640px and 736px
+@media only screen and (min-width: 42em) and (max-width: 46em) and (orientation: landscape) {
+  .field {
+    display: flex;
+  }
+}
+
+// tablet(iPad) portrait where width is at least than 768px
+@media only screen and (min-width: 48em) and (orientation: portrait) {
+  .field {
+    display: flex;
+  }
+}
+
+// tablet(iPad) landscape where width is at least than 768px
+@media only screen and (min-width: 48em) and (orientation: landscape) {
+  .field {
+    display: flex;
+  }
+}
+
+// iPhone X landscape where width is between 768px than 812px
+@media only screen and (min-width: 49em) and (max-width: 50.75em) and (orientation: landscape) {
+  .field {
+    display: flex;
+  }
+}
+
+// large desktop landscape where width is at least than 1200px
+@media only screen and (min-width: 75em) and (orientation: landscape) {
+  .field {
+    display: flex;
+  }
+  // these styles are inherited from the tablet landscape media query, only changes affecting very large desktops go here
+}

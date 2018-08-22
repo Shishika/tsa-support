@@ -1,0 +1,134 @@
+// Mobile First, styles to target mobile portrait mode. Width less than 375px;
+
+.players {
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    h1 {
+      color: #fd6d08;
+      font-weight: bold;
+      font-size: 25px;
+      line-height: normal;
+      margin-bottom: 2px;
+    }
+    .catogery {
+      line-height: 28px;
+      display: flex;
+      flex-direction: row;
+      .list {
+        margin-bottom: 20px;
+        .list-title {
+          cursor: pointer;
+          font-size: 24px;
+        }
+        .item-count {
+          cursor: pointer;
+          font-size: 24px;
+          color: #b3b3b3;
+        }
+        .items {
+          font-size: 14px;
+          cursor: pointer;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+  
+  // iPhone plus portrait mode. width is 414px
+  @media only screen and (min-width: 25em) and (orientation: portrait) {
+    .players {
+      .header {
+        font-size: 22px;
+      }
+      .catogery {
+        display: flex;
+        flex-direction: column;
+        .list {
+          .list-title {
+            cursor: pointer;
+            font-size: 18px;
+          }
+          .item-count {
+            cursor: pointer;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  
+  // mobile landscape where width is at least than 640px
+  @media only screen and (min-width: 40em) and (orientation: landscape) {
+  }
+  
+  // iPhone Plus landscape where width is between than 640px and 736px
+  @media only screen and (min-width: 42em) and (max-width: 46em) and (orientation: landscape) {
+    .players {
+      .catogery {
+        .list {
+          .list-title {
+            cursor: pointer;
+            font-size: 20px;
+          }
+          .item-count {
+            cursor: pointer;
+            font-size: 20px;
+          }
+          .items {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
+  
+  // tablet(iPad) portrait where width is at least than 768px
+  @media only screen and (min-width: 48em) and (orientation: portrait) {
+    .players {
+      .catogery {
+        display: flex;
+        flex-direction: row;
+        .items {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+  
+  // tablet(iPad) landscape where width is at least than 768px
+  @media only screen and (min-width: 48em) and (orientation: landscape) {
+    .players {
+      .catogery {
+        .items {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+  
+  // iPhone X landscape where width is between 768px than 812px
+  @media only screen and (min-width: 49em) and (max-width: 50.75em) and (orientation: landscape) {
+    .players {
+      .catogery {
+        .items {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+  
+  // large desktop landscape where width is at least than 1200px
+  @media only screen and (min-width: 75em) and (orientation: landscape) {
+    // these styles are inherited from the tablet landscape media query, only changes affecting very large desktops go here
+  }
+  

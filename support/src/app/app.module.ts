@@ -7,6 +7,12 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { PlayerComponent } from './player/player.component';
+import { CoachComponent } from './coach/coach.component';
+import { TournamentsComponent } from './tournaments/tournaments.component';
+import { OrganizationAdminsComponent } from './organization-admins/organization-admins.component';
+import { PrintComponent } from './print/print.component';
+import { FormComponent } from './form/form.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -15,10 +21,16 @@ import { PlayerComponent } from './player/player.component';
     HeaderComponent,
     FooterComponent,
     SupportPageComponent,
-    PlayerComponent
+    PlayerComponent,
+    CoachComponent,
+    TournamentsComponent,
+    OrganizationAdminsComponent,
+    PrintComponent,
+    FormComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,15 +1,8 @@
 // Mobile First, styles to target mobile portrait mode. Width less than 375px;
 
-.players {
+.coaches {
   margin: 15px;
   font-family: Arial, Helvetica, sans-serif;
-  .breadcrumb {
-    text-decoration: none;
-    color: rgba(4,156,219,0.5);
-  }
-  .breadcrumb:hover{
-    color: #3f3f3f;
-  }
   h1 {
     color: #fd6d08;
     font-weight: bold;
@@ -45,8 +38,8 @@
 
 // iPhone plus portrait mode. width is 414px
 @media only screen and (min-width: 25em) and (orientation: portrait) {
-  .players {
-    .header {
+  .coaches {
+    h1 {
       font-size: 22px;
     }
     .catogery {
@@ -72,7 +65,7 @@
 
 // iPhone Plus landscape where width is between than 640px and 736px
 @media only screen and (min-width: 42em) and (max-width: 46em) and (orientation: landscape) {
-  .players {
+  .coaches {
     .catogery {
       .list {
         .list-title {
@@ -95,7 +88,7 @@
 
 // tablet(iPad) portrait where width is at least than 768px
 @media only screen and (min-width: 48em) and (orientation: portrait) {
-  .players {
+  .coaches {
     .catogery {
       display: flex;
       flex-direction: row;
@@ -110,7 +103,7 @@
 
 // tablet(iPad) landscape where width is at least than 768px
 @media only screen and (min-width: 48em) and (orientation: landscape) {
-  .players {
+  .coaches {
     .catogery {
       .items {
         white-space: nowrap;
@@ -123,7 +116,7 @@
 
 // iPhone X landscape where width is between 768px than 812px
 @media only screen and (min-width: 49em) and (max-width: 50.75em) and (orientation: landscape) {
-  .players {
+  .coaches {
     .catogery {
       .items {
         white-space: nowrap;
@@ -136,5 +129,13 @@
 
 // large desktop landscape where width is at least than 1200px
 @media only screen and (min-width: 75em) and (orientation: landscape) {
-  // these styles are inherited from the tablet landscape media query, only changes affecting very large desktops go here
+  .coaches {
+    .catogery {
+      .items {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
 }
