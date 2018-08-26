@@ -1,14 +1,14 @@
-.title {
-  font-size: 30px;
-  color: #fd6d08;
-  font-weight: bold;
-}
 .form {
   font-family: Arial, Helvetica, sans-serif;
+  .title {
+    font-size: 30px;
+    color: #fd6d08;
+    font-weight: bold;
+  }
   .form-fields {
     margin: 0px 20px;
     .field {
-      .field-name{
+      .field-name {
         display: flex;
         align-items: center;
       }
@@ -21,12 +21,16 @@
         margin-bottom: 9px;
         line-height: 21px;
         color: #555;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.18);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
       }
       .required::after {
         content: "*";
         color: #d00;
       }
+    }
+    .add-attachment{
+      color: #1272de;
+    cursor: pointer;
     }
   }
 }

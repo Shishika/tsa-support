@@ -1,7 +1,7 @@
+import { SupportBreadcrumbComponent } from './shared/components/support-breadcrumb/support-breadcrumb.component';
 import { SupportPageComponent } from './support-page/support-page.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -12,7 +12,9 @@ import { TournamentsComponent } from './tournaments/tournaments.component';
 import { OrganizationAdminsComponent } from './organization-admins/organization-admins.component';
 import { PrintComponent } from './print/print.component';
 import { FormComponent } from './form/form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './/app-routing.module';
+import { Form2Component } from './form2/form2.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +28,15 @@ import { AppRoutingModule } from './/app-routing.module';
     TournamentsComponent,
     OrganizationAdminsComponent,
     PrintComponent,
-    FormComponent
+    FormComponent,
+    Form2Component,
+    SupportBreadcrumbComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports:
+   [BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

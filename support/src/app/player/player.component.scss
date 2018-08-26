@@ -1,13 +1,16 @@
 // Mobile First, styles to target mobile portrait mode. Width less than 375px;
 
 .players {
-  margin: 15px;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 20px;
+  min-height: 550px;
   font-family: Arial, Helvetica, sans-serif;
   .breadcrumb {
     text-decoration: none;
-    color: rgba(4,156,219,0.5);
+    color: rgba(4, 156, 219, 0.5);
   }
-  .breadcrumb:hover{
+  .breadcrumb:hover {
     color: #3f3f3f;
   }
   h1 {
@@ -16,6 +19,7 @@
     font-size: 25px;
     line-height: normal;
     margin-bottom: 2px;
+    margin: 10px 0px;
   }
   .catogery {
     line-height: 28px;
@@ -25,19 +29,45 @@
       margin-bottom: 20px;
       .list-title {
         cursor: pointer;
+        text-decoration: none;
         font-size: 24px;
+        margin-right: 5px;
+      }
+      .list-title:hover {
+        text-decoration: underline;
       }
       .item-count {
         cursor: pointer;
         font-size: 24px;
         color: #b3b3b3;
       }
+      .image{
+        background-image: url(/assets/cdn-ignored/sprites/portal/icon-s507c4b1df6.png);
+        background-position: 0px -178px;
+      }
       .items {
         font-size: 14px;
         cursor: pointer;
+        color: #049cdb;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+      }
+      .items:hover {
+        color: #036690;
+        text-decoration: underline;
+      }
+      .see-all {
+        font-size: 14px;
+        cursor: pointer;
+        color: rgba(4,156,219,0.5);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .see-all:hover {
+        color: #036690;
+        text-decoration: underline;
       }
     }
   }
@@ -60,6 +90,13 @@
         .item-count {
           cursor: pointer;
           font-size: 18px;
+        }
+        .items {
+          font-size: 14px;
+          cursor: pointer;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
       }
     }
@@ -137,4 +174,9 @@
 // large desktop landscape where width is at least than 1200px
 @media only screen and (min-width: 75em) and (orientation: landscape) {
   // these styles are inherited from the tablet landscape media query, only changes affecting very large desktops go here
+  .players {
+    h1 {
+      font-size: 34px;
+    }
+  }
 }
