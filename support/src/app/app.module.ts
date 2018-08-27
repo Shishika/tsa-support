@@ -1,3 +1,4 @@
+import { Form2Component } from './form2/form2.component';
 import { SupportBreadcrumbComponent } from './shared/components/support-breadcrumb/support-breadcrumb.component';
 import { SupportPageComponent } from './support-page/support-page.component';
 import { BrowserModule } from '@angular/platform-browser';
@@ -14,7 +15,6 @@ import { PrintComponent } from './print/print.component';
 import { FormComponent } from './form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './/app-routing.module';
-import { Form2Component } from './form2/form2.component';
 
 @NgModule({
   declarations: [
@@ -29,8 +29,8 @@ import { Form2Component } from './form2/form2.component';
     OrganizationAdminsComponent,
     PrintComponent,
     FormComponent,
-    Form2Component,
-    SupportBreadcrumbComponent
+    SupportBreadcrumbComponent,
+    Form2Component
   ],
   imports:
    [BrowserModule,

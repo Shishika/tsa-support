@@ -1,3 +1,66 @@
-<p>
-  form2 works!
-</p>
+<section class="form">
+  <form [formGroup]="supportForm">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 title">
+      <h2>
+        Submit Your Question/Comment
+      </h2>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-fields">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 field">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 field-name">
+          <label for="subject">Email</label>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+          <input class="field-input" type="text" required placeholder="Email" formControlName="email">
+          <div *ngIf="supportForm['controls'].email.hasError('pattern')" class="invalid">
+            Please enter a valid email.
+          </div>
+          
+          <div *ngIf="hasError('email')" class="invalid">
+            This field is required.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 field">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 field-name">
+          <label for="subject"> Phone Number</label>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+          <input class="field-input" type="text" required formControlName="phoneNumber">
+          <div *ngIf="supportForm['controls'].phoneNumber.hasError('pattern')" class="invalid">
+            Please enter a valid phone number.</div>
+          <div *ngIf="hasError('phoneNumber')" class="invalid">
+            This field is required.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 field">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 field-name">
+          <label for="subject"> Organisation</label>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+          <input class="field-input" type="text" required formControlName="organisation">
+          <div *ngIf="submitted && supportForm['controls'].organisation.errors.required" class="invalid">This field is required.</div>
+        </div>
+      </div>
+
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 field">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 field-name">
+          <label for="subject">Subject</label>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+          <input class="field-input" type="text" required formControlName="subject">
+          <div *ngIf="submitted && supportForm['controls'].subject.errors.required" class="invalid">This field is required.</div>
+        </div>
+      </div>
+
+      <div class="btn-submit">
+        <button (click)="onSubmit()" class="btn btn-primary">Submit</button>
+      </div>
+
+    </div>
+  </form>
+</section>

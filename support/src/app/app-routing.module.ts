@@ -1,3 +1,4 @@
+import { Form2Component } from './form2/form2.component';
 import { FormComponent } from './form/form.component';
 import { SupportPageComponent } from './support-page/support-page.component';
 import { OrganizationAdminsComponent } from './organization-admins/organization-admins.component';
@@ -13,12 +14,12 @@ import { TournamentsComponent } from './tournaments/tournaments.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'form2',
     pathMatch: 'full'
   },
   {
-    path: 'home',
-    component: HomeComponent
+    path: 'form2',
+    component: Form2Component
   },
   {
     path: 'player-or-guardian',
