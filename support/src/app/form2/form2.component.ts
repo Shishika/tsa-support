@@ -14,8 +14,9 @@ import {
 export class Form2Component implements OnInit {
   supportForm: FormGroup;
   submitted: boolean;
-  constructor(public formBuilder: FormBuilder) {    this.supportForm = this.formBuilder.group({
-    'email': this.formBuilder.control('', [Validators.required, Validators.pattern('[a-z0-9.@]*')]),
+  constructor(public formBuilder: FormBuilder) {
+    this.supportForm = this.formBuilder.group({
+    'email': this.formBuilder.control('', [Validators.required, Validators.email]),
     'phoneNumber': this.formBuilder.control('', [Validators.required, Validators.pattern('[0-9]*')]),
     'organisation': this.formBuilder.control('', [Validators.required]),
     'subject': this.formBuilder.control('', [Validators.required])

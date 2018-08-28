@@ -42,6 +42,18 @@
       color: #1272de;
       cursor: pointer;
     }
+    .btn-submit{
+      cursor: pointer;
+      font-size: 17px;
+      border-radius: 5px;
+      border: none;
+      background-color: #9bc347;
+      color: #fff;
+      padding: 10px 20px;
+    }
+    .btn-submit:hover{
+      background-color: #35913d;
+    }
   }
  
 }

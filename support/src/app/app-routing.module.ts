@@ -14,12 +14,12 @@ import { TournamentsComponent } from './tournaments/tournaments.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'form2',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
-    path: 'form2',
-    component: Form2Component
+    path: 'home',
+    component: HomeComponent
   },
   {
     path: 'player-or-guardian',
